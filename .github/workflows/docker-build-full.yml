@@ -41,8 +41,6 @@
           id: docker_meta
           uses: docker/metadata-action@v4
           with:
-            # FIXME: change this to your repo
-            #images: ghcr.io/<your-username>/<your-repo>
             images: ghcr.io/groupanized/wordsmith-web
             flavor: |
               latest=false
