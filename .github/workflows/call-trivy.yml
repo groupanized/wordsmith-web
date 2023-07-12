@@ -6,6 +6,6 @@ on:
 jobs:
   scan:
     name: Scan using reusable trivy action
-    uses: groupanized/actions/.github/workflows/reusable-trivy.yml@add-reusable-trivy
+    uses: groupanized/actions/.github/workflows/reusable-trivy.yml@main
     with:
       image: "ghcr.io/groupanized/wordsmith-web:latest"
