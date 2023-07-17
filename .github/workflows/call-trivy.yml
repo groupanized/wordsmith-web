@@ -1,0 +1,11 @@
+name: Call Trivy
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  scan:
+    name: Scan using reusable trivy action
+    uses: groupanized/actions/.github/workflows/reusable-trivy.yml@main
+    with:
+      image: "ghcr.io/groupanized/wordsmith-web:latest"
